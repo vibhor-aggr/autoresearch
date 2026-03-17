@@ -1,0 +1,38 @@
+# Python build artefacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# pytest caches
+.pytest_cache/
+
+# Experiment outputs (large files – download from compute node as needed)
+ideas/**/experiments/results/
+ideas/**/experiments/figures/
+ideas/**/experiments/data/
+
+# LaTeX build artefacts
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
