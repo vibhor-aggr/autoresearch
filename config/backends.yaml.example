@@ -1,0 +1,25 @@
+# backends.yaml.example – Backend credential configuration template.
+# Copy this to config/backends.yaml (NEVER commit it – it is gitignored).
+# Then set the values here OR use environment variables (preferred).
+
+# ---- Kaggle ----
+kaggle:
+  username: your_kaggle_username      # or set KAGGLE_USERNAME env var
+  # API key: set the KAGGLE_KEY environment variable
+  # Alternatively, place ~/.kaggle/kaggle.json as described in Kaggle API docs.
+
+# ---- Remote SSH server ----
+remote:
+  host: your-server.example.com       # IP address or hostname
+  user: ubuntu
+  key_file: ~/.ssh/id_rsa             # path to private SSH key
+  work_dir: /home/ubuntu/autoresearch # experiment working directory on server
+  # known_hosts: ~/.ssh/known_hosts   # path to SSH known_hosts for host key verification
+  # To add the remote host to known_hosts, run:
+  #   ssh-keyscan your-server.example.com >> ~/.ssh/known_hosts
+
+# ---- OpenAI ----
+# Set the OPENAI_API_KEY environment variable.
+
+# ---- Anthropic ----
+# Set the ANTHROPIC_API_KEY environment variable.

@@ -40,6 +40,8 @@ corresponding directory.  The status field progresses through:
 |---|---|---|---|---|---|
 | 001 | calibration-aware-kd | Does adding an explicit calibration loss to knowledge distillation improve student ECE without sacrificing accuracy? | `EXPERIMENTS` | NeurIPS / ICML | 2026-03-17 |
 | 002 | gradient-noise-finetuning | Does calibrated gradient noise during fine-tuning of pre-trained models reduce overfitting in low-data regimes? | `HYPOTHESIS` | ICLR / EMNLP | 2026-03-17 |
+| 003 | stub-idea | A stub description. | `FAILED` | TBD | 2026-03-18 |
+| 004 | stub-idea | A stub description. | `ABANDONED` | TBD | 2026-03-18 |
 
 ---
 
@@ -48,3 +50,20 @@ corresponding directory.  The status field progresses through:
 | Date | Entry |
 |---|---|
 | 2026-03-17 | Repository initialised.  Added ideas 001 and 002. Created specification and log files for both ideas. |
+| 2026-03-18 | Updated idea 003 (tbd) status → PROPOSED |
+| 2026-03-18 | Updated idea 003 (stub-idea) status → NOVELTY_OK |
+| 2026-03-18 | Updated idea 003 (stub-idea) status → HYPOTHESIS |
+| 2026-03-18 | Updated idea 003 (stub-idea) status → EXPERIMENTS |
+| 2026-03-18 | Updated idea 003 (stub-idea) status → FAILED |
+| 2026-03-18 | Updated idea 004 (tbd) status → PROPOSED |
+| 2026-03-18 | Updated idea 004 (stub-idea) status → NOVELTY_OK |
+| 2026-03-18 | Updated idea 004 (stub-idea) status → HYPOTHESIS |
+| 2026-03-18 | Updated idea 004 (stub-idea) status → EXPERIMENTS |
+| 2026-03-18 | Updated idea 004 (stub-idea) status → RESULTS |
+| 2026-03-18 | Updated idea 004 (stub-idea) status → EXPERIMENTS |
+| 2026-03-18 | Updated idea 004 (stub-idea) status → RESULTS |
+| 2026-03-18 | Updated idea 004 (stub-idea) status → EXPERIMENTS |
+| 2026-03-18 | Updated idea 004 (stub-idea) status → RESULTS |
+| 2026-03-18 | Updated idea 004 (stub-idea) status → EXPERIMENTS |
+| 2026-03-18 | Updated idea 004 (stub-idea) status → RESULTS |
+| 2026-03-18 | Updated idea 004 (stub-idea) status → ABANDONED |

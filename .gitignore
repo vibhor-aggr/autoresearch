@@ -36,3 +36,24 @@ ideas/**/experiments/data/
 # Editor
 .vscode/
 .idea/
+
+# Pipeline credential / secret configs (NEVER commit)
+config/backends.yaml
+config/secrets.yaml
+
+# Pipeline state and generated outputs
+ideas/**/pipeline_state.json
+ideas/**/experiments/results/
+ideas/**/experiments/figures/
+ideas/**/experiments/data/
+ideas/**/paper/*.pdf
+ideas/**/paper/*.aux
+ideas/**/paper/*.bbl
+ideas/**/paper/*.blg
+
+# Temporary stub-run idea directories (slug "tbd" means the idea name wasn't yet resolved)
+ideas/idea-*-tbd/
+
+# Environment files
+.env
+*.env
