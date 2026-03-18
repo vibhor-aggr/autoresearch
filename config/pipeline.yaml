@@ -1,0 +1,35 @@
+# Pipeline configuration
+# Copy this file to config/pipeline.yaml and edit as needed.
+# All values shown are defaults.
+
+llm:
+  provider: stub            # openai | anthropic | stub
+  model: gpt-4o             # model identifier (ignored for stub)
+  api_key_env: OPENAI_API_KEY  # environment variable holding the API key
+  temperature: 0.7
+  max_tokens: 4096
+
+backend:
+  type: local               # local | kaggle | remote
+
+  # ---- Kaggle backend settings (only used when type: kaggle) ----
+  kaggle_username: ""
+  kaggle_key_env: KAGGLE_KEY
+
+  # ---- Remote SSH backend settings (only used when type: remote) ----
+  remote_host: ""
+  remote_user: ubuntu
+  remote_key_file: ~/.ssh/id_rsa
+  remote_work_dir: /home/ubuntu/autoresearch
+  remote_timeout: 3600      # seconds to wait for a remote experiment
+
+validation:
+  significance_threshold: 0.05   # p-value threshold for paired t-test
+  max_accuracy_drop_pp: 0.5      # max tolerable accuracy drop (percentage points)
+  max_revision_rounds: 3         # give up after this many failed revisions
+
+pipeline:
+  ideas_dir: ideas               # relative to repo root
+  master_log: masterLog.md
+  continuous: true               # keep generating new ideas after each one finishes
+  max_ideas: 10                  # 0 = unlimited
